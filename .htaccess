@@ -1,0 +1,20 @@
+Options +Indexes +FollowSymLinks +MultiViews
+RewriteEngine on
+
+# Disable automatic directory detection
+DirectorySlash Off
+
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+# RewriteCond %{REQUEST_FILENAME} !-d [NC]
+
+# RewriteRule ^(.*)$ dashboard.php?url=$1 [NC,L]
+RewriteRule ^([a-zA-Z0-9_-]+)/?$  dashboard.php?url=$1 [NC,L]
+
+
+
+
+
+# ErrorDocument 400 http://localhost/lexuspos/error.html
+#ErrorDocument 401 http://localhost/lexuspos/rror.html
+# ErrorDocument 404 http://localhost/lexuspos/error.html
+# ErrorDocument 500 http://localhost/lexuspos/error.html

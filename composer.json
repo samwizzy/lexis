@@ -1,0 +1,26 @@
+{
+    "name": "pos/lexispos",
+    "description": "for inventory, retail, restaurant, bar & hotel mnanagement",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^3.3",
+        "twig/twig": "^2.8",
+        "illuminate/database": "^5.8",
+        "nesbot/carbon": "^2.16"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Samwize Okeke",
+            "email": "samwize.inc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        },
+        "files": [ "app/config/variables.php" ],
+        "classmap": ["app/facades","app/config/helpers.php"]
+    }
+
+}
