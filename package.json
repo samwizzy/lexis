@@ -20,7 +20,7 @@
     "babel-loader": "^8.0.5",
     "babelify": "^10.0.0",
     "jquery": "^3.4.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "webpack": "^4.30.0",
     "webpack-dev-server": "^3.3.1"
   },
